@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3016088829A7844500146245 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016088729A7844500146245 /* NotificationView.swift */; };
+		3016993029A0AB27009155DD /* MyPetStepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016992F29A0AB27009155DD /* MyPetStepApp.swift */; };
+		3016993229A0AB27009155DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016993129A0AB27009155DD /* ContentView.swift */; };
+		3016993429A0AB28009155DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3016993329A0AB28009155DD /* Assets.xcassets */; };
+		3016993729A0AB28009155DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3016993629A0AB28009155DD /* Preview Assets.xcassets */; };
+		3016993929A0AB28009155DD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016993829A0AB28009155DD /* Persistence.swift */; };
+		3016993C29A0AB28009155DD /* MyPetStep.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3016993A29A0AB28009155DD /* MyPetStep.xcdatamodeld */; };
+		3016994329A0AC9A009155DD /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016994229A0AC9A009155DD /* MessageView.swift */; };
+		3016994529A0ACA9009155DD /* MyDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016994429A0ACA9009155DD /* MyDiaryView.swift */; };
+		3016994729A0ACB4009155DD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016994629A0ACB4009155DD /* SettingsView.swift */; };
+		3055BF8929A1FC6E00939D77 /* ConversationDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055BF8829A1FC6E00939D77 /* ConversationDatabase.swift */; };
+		30B2782029A4A4900016012F /* UserMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2781F29A4A4900016012F /* UserMessageView.swift */; };
+		30B2782229A4A50F0016012F /* PetMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2782129A4A50F0016012F /* PetMessageView.swift */; };
+		30B2782729A583270016012F /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2782629A583270016012F /* OnBoardingView.swift */; };
+		30B2782929A5849F0016012F /* OnBoardingPetMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2782829A5849F0016012F /* OnBoardingPetMessageView.swift */; };
+		30B2782B29A585B70016012F /* OnBoardingPetFollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2782A29A585B70016012F /* OnBoardingPetFollowView.swift */; };
+		30B2782F29A590740016012F /* PetFollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2782E29A590740016012F /* PetFollowView.swift */; };
+		30B2784129A6F64D0016012F /* ChooseMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2784029A6F64D0016012F /* ChooseMoodView.swift */; };
+		30B2784329A6F6C20016012F /* MoodDiaryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2784229A6F6C20016012F /* MoodDiaryStorage.swift */; };
+		30B2784529A6F71D0016012F /* MoodDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2784429A6F71D0016012F /* MoodDiary.swift */; };
+		30B2784729A6F7A70016012F /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2784629A6F7A70016012F /* Storage.swift */; };
+		30B2784A29A6F8C30016012F /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2784929A6F8C30016012F /* CalendarView.swift */; };
+		30B2784C29A6F9630016012F /* MoodCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2784B29A6F9630016012F /* MoodCalendarView.swift */; };
+		30B2784E29A6FAC80016012F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2784D29A6FAC80016012F /* DateExtension.swift */; };
+		61E509F229A8C3FE00491ECB /* msgReceived.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61E509F129A8C3FE00491ECB /* msgReceived.mp3 */; };
+		61E509F429A8C40900491ECB /* msgSent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61E509F329A8C40900491ECB /* msgSent.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3016088729A7844500146245 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		3016992C29A0AB27009155DD /* MyPetStep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPetStep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3016992F29A0AB27009155DD /* MyPetStepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPetStepApp.swift; sourceTree = "<group>"; };
+		3016993129A0AB27009155DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3016993329A0AB28009155DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3016993629A0AB28009155DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3016993829A0AB28009155DD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		3016993B29A0AB28009155DD /* MyPetStep.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyPetStep.xcdatamodel; sourceTree = "<group>"; };
+		3016994229A0AC9A009155DD /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		3016994429A0ACA9009155DD /* MyDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDiaryView.swift; sourceTree = "<group>"; };
+		3016994629A0ACB4009155DD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3055BF8829A1FC6E00939D77 /* ConversationDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationDatabase.swift; sourceTree = "<group>"; };
+		30B2781F29A4A4900016012F /* UserMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMessageView.swift; sourceTree = "<group>"; };
+		30B2782129A4A50F0016012F /* PetMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetMessageView.swift; sourceTree = "<group>"; };
+		30B2782629A583270016012F /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		30B2782829A5849F0016012F /* OnBoardingPetMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPetMessageView.swift; sourceTree = "<group>"; };
+		30B2782A29A585B70016012F /* OnBoardingPetFollowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPetFollowView.swift; sourceTree = "<group>"; };
+		30B2782E29A590740016012F /* PetFollowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFollowView.swift; sourceTree = "<group>"; };
+		30B2784029A6F64D0016012F /* ChooseMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseMoodView.swift; sourceTree = "<group>"; };
+		30B2784229A6F6C20016012F /* MoodDiaryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDiaryStorage.swift; sourceTree = "<group>"; };
+		30B2784429A6F71D0016012F /* MoodDiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDiary.swift; sourceTree = "<group>"; };
+		30B2784629A6F7A70016012F /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		30B2784929A6F8C30016012F /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		30B2784B29A6F9630016012F /* MoodCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCalendarView.swift; sourceTree = "<group>"; };
+		30B2784D29A6FAC80016012F /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		61E509F129A8C3FE00491ECB /* msgReceived.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = msgReceived.mp3; sourceTree = SOURCE_ROOT; };
+		61E509F329A8C40900491ECB /* msgSent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = msgSent.mp3; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3016992929A0AB27009155DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3016992329A0AB27009155DD = {
+			isa = PBXGroup;
+			children = (
+				61E509F329A8C40900491ECB /* msgSent.mp3 */,
+				61E509F129A8C3FE00491ECB /* msgReceived.mp3 */,
+				30B2784829A6F8650016012F /* MoodViews */,
+				3016992E29A0AB27009155DD /* MyPetStep */,
+				30B2783F29A60E700016012F /* Data */,
+				30B2782329A4A5340016012F /* Model */,
+				3016994829A0ACD2009155DD /* NavigationViews */,
+				30B2783E29A60E500016012F /* OnboardingScreens(Draft) */,
+				3016992D29A0AB27009155DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3016992D29A0AB27009155DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3016992C29A0AB27009155DD /* MyPetStep.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3016992E29A0AB27009155DD /* MyPetStep */ = {
+			isa = PBXGroup;
+			children = (
+				3016992F29A0AB27009155DD /* MyPetStepApp.swift */,
+				3016993129A0AB27009155DD /* ContentView.swift */,
+				3016993329A0AB28009155DD /* Assets.xcassets */,
+				3016088729A7844500146245 /* NotificationView.swift */,
+				3016993829A0AB28009155DD /* Persistence.swift */,
+				3016993A29A0AB28009155DD /* MyPetStep.xcdatamodeld */,
+				3016993529A0AB28009155DD /* Preview Content */,
+			);
+			path = MyPetStep;
+			sourceTree = "<group>";
+		};
+		3016993529A0AB28009155DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3016993629A0AB28009155DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3016994829A0ACD2009155DD /* NavigationViews */ = {
+			isa = PBXGroup;
+			children = (
+				3016994229A0AC9A009155DD /* MessageView.swift */,
+				3016994429A0ACA9009155DD /* MyDiaryView.swift */,
+				3016994629A0ACB4009155DD /* SettingsView.swift */,
+			);
+			path = NavigationViews;
+			sourceTree = "<group>";
+		};
+		30B2782329A4A5340016012F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30B2782E29A590740016012F /* PetFollowView.swift */,
+				30B2782129A4A50F0016012F /* PetMessageView.swift */,
+				30B2781F29A4A4900016012F /* UserMessageView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30B2783E29A60E500016012F /* OnboardingScreens(Draft) */ = {
+			isa = PBXGroup;
+			children = (
+				30B2782A29A585B70016012F /* OnBoardingPetFollowView.swift */,
+				30B2782829A5849F0016012F /* OnBoardingPetMessageView.swift */,
+				30B2782629A583270016012F /* OnBoardingView.swift */,
+			);
+			path = "OnboardingScreens(Draft)";
+			sourceTree = "<group>";
+		};
+		30B2783F29A60E700016012F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3055BF8829A1FC6E00939D77 /* ConversationDatabase.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		30B2784829A6F8650016012F /* MoodViews */ = {
+			isa = PBXGroup;
+			children = (
+				30B2784D29A6FAC80016012F /* DateExtension.swift */,
+				30B2784B29A6F9630016012F /* MoodCalendarView.swift */,
+				30B2784629A6F7A70016012F /* Storage.swift */,
+				30B2784929A6F8C30016012F /* CalendarView.swift */,
+				30B2784429A6F71D0016012F /* MoodDiary.swift */,
+				30B2784229A6F6C20016012F /* MoodDiaryStorage.swift */,
+				30B2784029A6F64D0016012F /* ChooseMoodView.swift */,
+			);
+			path = MoodViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3016992B29A0AB27009155DD /* MyPetStep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3016993F29A0AB28009155DD /* Build configuration list for PBXNativeTarget "MyPetStep" */;
+			buildPhases = (
+				3016992829A0AB27009155DD /* Sources */,
+				3016992929A0AB27009155DD /* Frameworks */,
+				3016992A29A0AB27009155DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyPetStep;
+			productName = MyPetStep;
+			productReference = 3016992C29A0AB27009155DD /* MyPetStep.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3016992429A0AB27009155DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					3016992B29A0AB27009155DD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 3016992729A0AB27009155DD /* Build configuration list for PBXProject "MyPetStep" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3016992329A0AB27009155DD;
+			productRefGroup = 3016992D29A0AB27009155DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3016992B29A0AB27009155DD /* MyPetStep */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3016992A29A0AB27009155DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3016993729A0AB28009155DD /* Preview Assets.xcassets in Resources */,
+				61E509F429A8C40900491ECB /* msgSent.mp3 in Resources */,
+				61E509F229A8C3FE00491ECB /* msgReceived.mp3 in Resources */,
+				3016993429A0AB28009155DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3016992829A0AB27009155DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3016994729A0ACB4009155DD /* SettingsView.swift in Sources */,
+				30B2784E29A6FAC80016012F /* DateExtension.swift in Sources */,
+				30B2782929A5849F0016012F /* OnBoardingPetMessageView.swift in Sources */,
+				3016088829A7844500146245 /* NotificationView.swift in Sources */,
+				3016993929A0AB28009155DD /* Persistence.swift in Sources */,
+				30B2784529A6F71D0016012F /* MoodDiary.swift in Sources */,
+				3016993C29A0AB28009155DD /* MyPetStep.xcdatamodeld in Sources */,
+				30B2784729A6F7A70016012F /* Storage.swift in Sources */,
+				3016994529A0ACA9009155DD /* MyDiaryView.swift in Sources */,
+				30B2784129A6F64D0016012F /* ChooseMoodView.swift in Sources */,
+				30B2782229A4A50F0016012F /* PetMessageView.swift in Sources */,
+				30B2782729A583270016012F /* OnBoardingView.swift in Sources */,
+				30B2782029A4A4900016012F /* UserMessageView.swift in Sources */,
+				3016993229A0AB27009155DD /* ContentView.swift in Sources */,
+				30B2784A29A6F8C30016012F /* CalendarView.swift in Sources */,
+				30B2782B29A585B70016012F /* OnBoardingPetFollowView.swift in Sources */,
+				3055BF8929A1FC6E00939D77 /* ConversationDatabase.swift in Sources */,
+				30B2782F29A590740016012F /* PetFollowView.swift in Sources */,
+				3016993029A0AB27009155DD /* MyPetStepApp.swift in Sources */,
+				30B2784C29A6F9630016012F /* MoodCalendarView.swift in Sources */,
+				30B2784329A6F6C20016012F /* MoodDiaryStorage.swift in Sources */,
+				3016994329A0AC9A009155DD /* MessageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3016993D29A0AB28009155DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3016993E29A0AB28009155DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3016994029A0AB28009155DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyPetStep/Preview Content\"";
+				DEVELOPMENT_TEAM = U4VRMQD4GK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PetStep;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jtl.MyPetStep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3016994129A0AB28009155DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyPetStep/Preview Content\"";
+				DEVELOPMENT_TEAM = U4VRMQD4GK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PetStep;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jtl.MyPetStep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3016992729A0AB27009155DD /* Build configuration list for PBXProject "MyPetStep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3016993D29A0AB28009155DD /* Debug */,
+				3016993E29A0AB28009155DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3016993F29A0AB28009155DD /* Build configuration list for PBXNativeTarget "MyPetStep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3016994029A0AB28009155DD /* Debug */,
+				3016994129A0AB28009155DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3016993A29A0AB28009155DD /* MyPetStep.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3016993B29A0AB28009155DD /* MyPetStep.xcdatamodel */,
+			);
+			currentVersion = 3016993B29A0AB28009155DD /* MyPetStep.xcdatamodel */;
+			path = MyPetStep.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3016992429A0AB27009155DD /* Project object */;
+}

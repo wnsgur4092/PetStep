@@ -1,0 +1,39 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "PetRoom.jpg",
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "PetRoomFull.jpg",
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "PetRoomFull 1.jpg",
+      "idiom" : "iphone",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "compression-type" : "lossless",
+    "template-rendering-intent" : "original"
+  }
+}
