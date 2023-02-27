@@ -19,4 +19,4 @@ Therefore, we came up with the idea to use a lovely virtual pet to encourage peo
 * Interactive Mode: your pet will interact with you through mini games like I spy
 
 # GIF showcase
-![](https://github.com/liang-bruce/PetStep/PetStepShowCase.gif)
+![](https://github.com/liang-bruce/PetStep/blob/main/PetStepShowCase.gif)
