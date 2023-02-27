@@ -18,5 +18,9 @@ Therefore, we came up with the idea to use a lovely virtual pet to encourage peo
 * Guided Meditation Mode: put your headphone on and follow the guidance to meditation
 * Interactive Mode: your pet will interact with you through mini games like I spy
 
+However, the time limit is really tight and all of us do not have any iOS development experience. The current version is shown below.
+
+We are planning to take some time to work on our uni work and swift fundamentals then come back to this project.
+
 # GIF showcase
 <img src="PetStepShowCase.gif" width="300" height="648"/>
