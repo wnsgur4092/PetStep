@@ -12,6 +12,8 @@ extension Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         return dateFormatter.string(from: date)
+        
+        //test
     }
     var dateInMyFormat: String {
         formattedDate(date: Calendar.current.startOfDay(for: self))
