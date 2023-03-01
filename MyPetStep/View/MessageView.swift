@@ -9,8 +9,7 @@ import SwiftUI
 import AVKit
 
 struct MessageView: View {
-    
-    
+    //MARK: - PROPERTIES
     @State public var lumiEmotion: String = "LumiNeutral"
     @State private var isDragging: Bool = false
     
@@ -63,10 +62,8 @@ struct MessageView: View {
             }
     }
     
-    
-    
+    //MARK: - BODY
     var body: some View {
-        
         VStack{
             ZStack{
                 Group{
@@ -123,6 +120,7 @@ struct MessageView: View {
     }
 }
 
+//MARK: - PREVIEW
 struct MessageView_Previews: PreviewProvider {
     static var previews: some View {
         MessageView()

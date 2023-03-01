@@ -6,15 +6,10 @@
 //
 
 import SwiftUI
-import CoreData
 
 struct ContentView: View {
+    //MARK: - PROPERTIES
     @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
     
     // Variable to check the active tab. See DTB below
     @State var selection = 0
@@ -26,6 +21,8 @@ struct ContentView: View {
     
     @EnvironmentObject var moodDiaryStorage: MoodDiaryStorage
 
+    
+    //MARK: - BODY
     var body: some View {
 
             TabView(selection: $selection) {
@@ -60,37 +57,6 @@ struct ContentView: View {
             .accentColor(Color("AccentColor"))
         
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
 }
 
 private let itemFormatter: DateFormatter = {
@@ -100,8 +66,8 @@ private let itemFormatter: DateFormatter = {
     return formatter
 }()
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext).environmentObject(MoodDiaryStorage(preview: true))
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView().environment(\.managedObjectContext, .container.viewContext).environmentObject(MoodDiaryStorage(preview: true))
+//    }
+//}

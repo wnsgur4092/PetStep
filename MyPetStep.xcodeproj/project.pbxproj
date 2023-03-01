@@ -12,10 +12,7 @@
 		3016993229A0AB27009155DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016993129A0AB27009155DD /* ContentView.swift */; };
 		3016993429A0AB28009155DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3016993329A0AB28009155DD /* Assets.xcassets */; };
 		3016993729A0AB28009155DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3016993629A0AB28009155DD /* Preview Assets.xcassets */; };
-		3016993929A0AB28009155DD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016993829A0AB28009155DD /* Persistence.swift */; };
-		3016993C29A0AB28009155DD /* MyPetStep.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3016993A29A0AB28009155DD /* MyPetStep.xcdatamodeld */; };
 		3016994329A0AC9A009155DD /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016994229A0AC9A009155DD /* MessageView.swift */; };
-		3016994529A0ACA9009155DD /* MyDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016994429A0ACA9009155DD /* MyDiaryView.swift */; };
 		3016994729A0ACB4009155DD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016994629A0ACB4009155DD /* SettingsView.swift */; };
 		3055BF8929A1FC6E00939D77 /* ConversationDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3055BF8829A1FC6E00939D77 /* ConversationDatabase.swift */; };
 		30B2782029A4A4900016012F /* UserMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2781F29A4A4900016012F /* UserMessageView.swift */; };
@@ -33,6 +30,9 @@
 		30B2784E29A6FAC80016012F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2784D29A6FAC80016012F /* DateExtension.swift */; };
 		61E509F229A8C3FE00491ECB /* msgReceived.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61E509F129A8C3FE00491ECB /* msgReceived.mp3 */; };
 		61E509F429A8C40900491ECB /* msgSent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61E509F329A8C40900491ECB /* msgSent.mp3 */; };
+		BF2C0ECA29AF5DC20018E4E2 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C0EC929AF5DC20018E4E2 /* MessageViewModel.swift */; };
+		BF2C0ECC29AF5DD60018E4E2 /* MyDiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C0ECB29AF5DD60018E4E2 /* MyDiaryViewModel.swift */; };
+		BF2C0ECE29AF5DDD0018E4E2 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C0ECD29AF5DDD0018E4E2 /* SettingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,10 +42,7 @@
 		3016993129A0AB27009155DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3016993329A0AB28009155DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3016993629A0AB28009155DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3016993829A0AB28009155DD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		3016993B29A0AB28009155DD /* MyPetStep.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyPetStep.xcdatamodel; sourceTree = "<group>"; };
 		3016994229A0AC9A009155DD /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
-		3016994429A0ACA9009155DD /* MyDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDiaryView.swift; sourceTree = "<group>"; };
 		3016994629A0ACB4009155DD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3055BF8829A1FC6E00939D77 /* ConversationDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationDatabase.swift; sourceTree = "<group>"; };
 		30B2781F29A4A4900016012F /* UserMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMessageView.swift; sourceTree = "<group>"; };
@@ -61,8 +58,11 @@
 		30B2784929A6F8C30016012F /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		30B2784B29A6F9630016012F /* MoodCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCalendarView.swift; sourceTree = "<group>"; };
 		30B2784D29A6FAC80016012F /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
-		61E509F129A8C3FE00491ECB /* msgReceived.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = msgReceived.mp3; sourceTree = SOURCE_ROOT; };
-		61E509F329A8C40900491ECB /* msgSent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = msgSent.mp3; sourceTree = SOURCE_ROOT; };
+		61E509F129A8C3FE00491ECB /* msgReceived.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = msgReceived.mp3; path = MyPetStep/Sounds/msgReceived.mp3; sourceTree = SOURCE_ROOT; };
+		61E509F329A8C40900491ECB /* msgSent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = msgSent.mp3; path = MyPetStep/Sounds/msgSent.mp3; sourceTree = SOURCE_ROOT; };
+		BF2C0EC929AF5DC20018E4E2 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		BF2C0ECB29AF5DD60018E4E2 /* MyDiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDiaryViewModel.swift; sourceTree = "<group>"; };
+		BF2C0ECD29AF5DDD0018E4E2 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,14 +79,7 @@
 		3016992329A0AB27009155DD = {
 			isa = PBXGroup;
 			children = (
-				61E509F329A8C40900491ECB /* msgSent.mp3 */,
-				61E509F129A8C3FE00491ECB /* msgReceived.mp3 */,
-				30B2784829A6F8650016012F /* MoodViews */,
 				3016992E29A0AB27009155DD /* MyPetStep */,
-				30B2783F29A60E700016012F /* Data */,
-				30B2782329A4A5340016012F /* Model */,
-				3016994829A0ACD2009155DD /* NavigationViews */,
-				30B2783E29A60E500016012F /* OnboardingScreens(Draft) */,
 				3016992D29A0AB27009155DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,11 +96,16 @@
 			isa = PBXGroup;
 			children = (
 				3016992F29A0AB27009155DD /* MyPetStepApp.swift */,
-				3016993129A0AB27009155DD /* ContentView.swift */,
+				30B2783F29A60E700016012F /* Data */,
+				3016994829A0ACD2009155DD /* NavigationViews */,
+				30B2783E29A60E500016012F /* OnboardingScreens(Draft) */,
+				BF2C0EC829AF5BD60018E4E2 /* Sounds */,
+				30B2782329A4A5340016012F /* Model */,
+				BF2C0EC429AF595D0018E4E2 /* ViewModel */,
+				BF2C0EC229AF59380018E4E2 /* View */,
+				30B2784829A6F8650016012F /* MoodViews */,
 				3016993329A0AB28009155DD /* Assets.xcassets */,
 				3016088729A7844500146245 /* NotificationView.swift */,
-				3016993829A0AB28009155DD /* Persistence.swift */,
-				3016993A29A0AB28009155DD /* MyPetStep.xcdatamodeld */,
 				3016993529A0AB28009155DD /* Preview Content */,
 			);
 			path = MyPetStep;
@@ -124,9 +122,6 @@
 		3016994829A0ACD2009155DD /* NavigationViews */ = {
 			isa = PBXGroup;
 			children = (
-				3016994229A0AC9A009155DD /* MessageView.swift */,
-				3016994429A0ACA9009155DD /* MyDiaryView.swift */,
-				3016994629A0ACB4009155DD /* SettingsView.swift */,
 			);
 			path = NavigationViews;
 			sourceTree = "<group>";
@@ -134,9 +129,6 @@
 		30B2782329A4A5340016012F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				30B2782E29A590740016012F /* PetFollowView.swift */,
-				30B2782129A4A50F0016012F /* PetMessageView.swift */,
-				30B2781F29A4A4900016012F /* UserMessageView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				30B2784D29A6FAC80016012F /* DateExtension.swift */,
-				30B2784B29A6F9630016012F /* MoodCalendarView.swift */,
 				30B2784629A6F7A70016012F /* Storage.swift */,
 				30B2784929A6F8C30016012F /* CalendarView.swift */,
 				30B2784429A6F71D0016012F /* MoodDiary.swift */,
@@ -171,6 +162,63 @@
 				30B2784029A6F64D0016012F /* ChooseMoodView.swift */,
 			);
 			path = MoodViews;
+			sourceTree = "<group>";
+		};
+		BF2C0EC229AF59380018E4E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3016993129A0AB27009155DD /* ContentView.swift */,
+				BF2C0EC729AF5A880018E4E2 /* SettingView */,
+				BF2C0EC629AF5A7E0018E4E2 /* MyDiaryView */,
+				BF2C0EC529AF5A780018E4E2 /* MessageView */,
+				30B2782E29A590740016012F /* PetFollowView.swift */,
+				30B2782129A4A50F0016012F /* PetMessageView.swift */,
+				30B2781F29A4A4900016012F /* UserMessageView.swift */,
+				3016994229A0AC9A009155DD /* MessageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF2C0EC429AF595D0018E4E2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF2C0EC929AF5DC20018E4E2 /* MessageViewModel.swift */,
+				BF2C0ECB29AF5DD60018E4E2 /* MyDiaryViewModel.swift */,
+				BF2C0ECD29AF5DDD0018E4E2 /* SettingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BF2C0EC529AF5A780018E4E2 /* MessageView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MessageView;
+			sourceTree = "<group>";
+		};
+		BF2C0EC629AF5A7E0018E4E2 /* MyDiaryView */ = {
+			isa = PBXGroup;
+			children = (
+				30B2784B29A6F9630016012F /* MoodCalendarView.swift */,
+			);
+			path = MyDiaryView;
+			sourceTree = "<group>";
+		};
+		BF2C0EC729AF5A880018E4E2 /* SettingView */ = {
+			isa = PBXGroup;
+			children = (
+				3016994629A0ACB4009155DD /* SettingsView.swift */,
+			);
+			path = SettingView;
+			sourceTree = "<group>";
+		};
+		BF2C0EC829AF5BD60018E4E2 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				61E509F329A8C40900491ECB /* msgSent.mp3 */,
+				61E509F129A8C3FE00491ECB /* msgReceived.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,17 +297,17 @@
 				30B2784E29A6FAC80016012F /* DateExtension.swift in Sources */,
 				30B2782929A5849F0016012F /* OnBoardingPetMessageView.swift in Sources */,
 				3016088829A7844500146245 /* NotificationView.swift in Sources */,
-				3016993929A0AB28009155DD /* Persistence.swift in Sources */,
+				BF2C0ECA29AF5DC20018E4E2 /* MessageViewModel.swift in Sources */,
 				30B2784529A6F71D0016012F /* MoodDiary.swift in Sources */,
-				3016993C29A0AB28009155DD /* MyPetStep.xcdatamodeld in Sources */,
 				30B2784729A6F7A70016012F /* Storage.swift in Sources */,
-				3016994529A0ACA9009155DD /* MyDiaryView.swift in Sources */,
 				30B2784129A6F64D0016012F /* ChooseMoodView.swift in Sources */,
 				30B2782229A4A50F0016012F /* PetMessageView.swift in Sources */,
 				30B2782729A583270016012F /* OnBoardingView.swift in Sources */,
 				30B2782029A4A4900016012F /* UserMessageView.swift in Sources */,
+				BF2C0ECC29AF5DD60018E4E2 /* MyDiaryViewModel.swift in Sources */,
 				3016993229A0AB27009155DD /* ContentView.swift in Sources */,
 				30B2784A29A6F8C30016012F /* CalendarView.swift in Sources */,
+				BF2C0ECE29AF5DDD0018E4E2 /* SettingViewModel.swift in Sources */,
 				30B2782B29A585B70016012F /* OnBoardingPetFollowView.swift in Sources */,
 				3055BF8929A1FC6E00939D77 /* ConversationDatabase.swift in Sources */,
 				30B2782F29A590740016012F /* PetFollowView.swift in Sources */,
@@ -469,19 +517,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3016993A29A0AB28009155DD /* MyPetStep.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3016993B29A0AB28009155DD /* MyPetStep.xcdatamodel */,
-			);
-			currentVersion = 3016993B29A0AB28009155DD /* MyPetStep.xcdatamodel */;
-			path = MyPetStep.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3016992429A0AB27009155DD /* Project object */;
 }
