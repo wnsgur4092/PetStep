@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct PetMessageView: View {
+    //MARK: - PROPERTIES
+    var petMessage: String
+    @StateObject var messageViewModel : MessageViewModel
     
-    var PetMessage: String
-    
+    //MARK: - BODY
     var body: some View {
         ZStack{
-            VStack{
-                HStack{
-                    Spacer().frame(width: 22)
+            VStack(spacing: 16){
+                HStack(spacing: 10){
+                    //Pet Image
                     ZStack{
                         Circle()
                             .fill(Color("DisplayBG"))
@@ -24,76 +26,61 @@ struct PetMessageView: View {
                             .resizable()
                             .frame(width: 28, height: 28)
                             .clipShape(Circle())
-                        
-                    }
+                    } //: Pet Image
                     
-                    Spacer().frame(width: 10)
+                    //Name
                     Text("Lumi")
                         .font(.system(size: 15.0))
                         .fontWeight(Font.Weight.bold)
                         .foregroundColor(Color("MessagePetInfo"))
                     Spacer()
-                }
-                Spacer().frame(height: 10)
-                HStack(){
-                    Spacer().frame(width: 22)
-                    Text(PetMessage)
-                        .frame(width: 293, height: .infinity, alignment: .leading)
+                } //: Name
+                
+                
+                //Pet Message
+                HStack{
+                    Text(petMessage)
+                        .frame(width: .infinity, height: .infinity, alignment: .leading)
                         .font(.system(size: 20))
                         .fontWeight(Font.Weight.bold)
                         .foregroundColor(Color("PrimaryColor"))
                         .lineSpacing(7)
-                    
-                    Spacer().frame(width: 22)
-                }
-                Spacer().frame(height: 16)
+                } //: Pet Message
+                
+                
+                //Time
                 HStack{
-                    Spacer().frame(width: 22)
                     Image(systemName: "clock")
                         .resizable()
-                        .foregroundColor(Color("MessageTimeStamp"))
-                        .frame(width: 13, height: 13)
+                        .frame(width: 16, height: 16)
                     Spacer().frame(width: 7)
-                    Text(getTime())
-                        .font(.system(size: 14.0))
+                    Text(messageViewModel.getTime())
+                        .font(.system(size: 16.0))
                         .fontWeight(Font.Weight.regular)
-                        .foregroundColor(Color("MessageTimeStamp"))
+
                     Spacer()
-                }
-            }
+                } //: Time
+                .foregroundColor(Color("MessageTimeStamp"))
+                
+            } //: VSTACK
+            .padding(.vertical, 16)
+            .padding(.horizontal, 22)
             
-            
-            .padding(.top, 17)
-            .padding(.bottom, 17)
+            //Background
             .background(.white)
             .overlay(
                 RoundedRectangle(cornerRadius: 16)
                     .stroke(Color("MessageBorder"), lineWidth: 2)
             )
-            
             .cornerRadius(16)
             .padding(.horizontal, 30)
-            
-            VStack{
-                Spacer()
-                HStack{
-                    Spacer().frame(width: 24)
-                    Image("MainMessageArrow")
-                    Spacer()
-                }
-            }
-        }.padding(.bottom, 15)
-    }
-    func getTime() -> String {
-        let formatter = DateFormatter()
-        formatter.timeStyle = .short
-        let dateString = formatter.string(from: Date())
-        return dateString
+        }
     }
 }
 
+//MARK: - PREVIEW
 struct PetMessageView_Previews: PreviewProvider {
     static var previews: some View {
-        PetMessageView(PetMessage: "Hello")
+        PetMessageView(petMessage: "Hellofweffwefwewefewfwefwefwefwfwffwfwefwfw", messageViewModel: MessageViewModel())
     }
 }
