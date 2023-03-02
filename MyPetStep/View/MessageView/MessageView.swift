@@ -13,15 +13,20 @@ struct MessageView: View {
     @StateObject var messageViewModel : MessageViewModel = MessageViewModel()
     
     @State public var lumiEmotion: String = "LumiNeutral"
-    @State private var isDragging: Bool = false
-    @AppStorage("bond") var bondPoints: Double = 0.0
-    @State private var isPetting = false
-    @State private var petLimit = 0;
     
+    //Draging and Tapping
+    @State private var isDragging: Bool = false
+    @State private var isPetting = false
+    
+    @State var bondPoints: Double = 0.0
+
+    @State private var petLimit = 0 // -> What is this for ?
     
     //From PetConversation
     @State private var upperResponseText = "Ready as always!+10#LumiHappy"
     @State private var lowerResponseText = "Wait hold on..#LumiNeutral"
+    
+    
     @State var messages: [String] = ["Hey Cindy! It's 8:00am.. Ready to go for a walk?"]
     @State var IsSent = false;
     
@@ -35,51 +40,6 @@ struct MessageView: View {
     //    @AppStorage("bond") var bondPoints = 0
     
     
-    
-    
-    
-    var drag: some Gesture {
-        DragGesture()
-            .onChanged { _ in self.isPetting = true;
-                bondPoints+=0.02;
-                let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
-                impactHeavy.impactOccurred()
-                
-            }
-            .onEnded { _ in self.isPetting = false;
-                
-            }
-    }
-    var tap: some Gesture {
-        LongPressGesture(minimumDuration: 0)
-            .onChanged { _ in self.isPetting = true;
-                
-                bondPoints+=0.02;
-                
-            }
-            .onEnded { _ in self.isPetting = false;
-                
-                if(petLimit>=6){
-                    if(isDragging){
-                        isDragging.toggle()
-                    }
-                    
-                    petLimit = 0
-                }
-                
-                petLimit+=1
-                
-                UINotificationFeedbackGenerator().notificationOccurred(.error)
-                let tempEmotion = lumiEmotion
-                lumiEmotion = "LumiPet"
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    lumiEmotion = tempEmotion
-                    
-                }
-            }
-    }
-    
     //MARK: - BODY
     var body: some View {
         VStack{
@@ -89,7 +49,7 @@ struct MessageView: View {
                     
                     coinButton
                     
-                    Image(isPetting ? "LumiPet" : lumiEmotion).offset(y: isDragging ? 140 : -240).gesture(drag).gesture(tap)
+                    petImage
                 } //: UPSIDE GROUP
                 
                 ZStack{
@@ -108,15 +68,13 @@ struct MessageView: View {
                         .offset(y: -120)
                         
                         petConversation
-//                        (lumiEmotion: $lumiEmotion)
+                        //                        (lumiEmotion: $lumiEmotion)
                             .padding(.top, 270)
                         Spacer()
                     } //: DOWNSIDE GROUP
                 }.offset(y: isDragging ? 430 : 0)
             }.animation(.easeInOut, value: isDragging)
         }
-        //Image("Onion").offset(y:-9).opacity(0.4)
-        
     }
     
     //MARK: - COMPONENTS
@@ -127,6 +85,13 @@ struct MessageView: View {
             .resizable()
             .edgesIgnoringSafeArea(.all)
         
+    }
+    
+    //Pet Image
+    fileprivate var petImage : some View {
+        Image(isPetting ? "LumiPet" : lumiEmotion)
+            .offset(
+                y: isDragging ? 140 : -240).gesture(drag()).gesture(tap())
     }
     
     //COIN BUTTON
@@ -376,11 +341,54 @@ struct MessageView: View {
             }
             
         }.padding(.bottom, 10)
-        
-        
-        
+    }
+    
+    
+    
+    fileprivate func drag() -> some Gesture {
+        DragGesture()
+            .onChanged { _ in self.isPetting = true;
+                bondPoints += 0.02;
+                let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
+                impactHeavy.impactOccurred()
+                
+            }
+            .onEnded { _ in self.isPetting = false;
+                
+            }
+    }
+    
+    fileprivate func tap() -> some Gesture {
+        LongPressGesture(minimumDuration: 0)
+            .onChanged { _ in self.isPetting = true;
+                
+                bondPoints+=0.02;
+                
+            }
+            .onEnded { _ in self.isPetting = false;
+                
+                if(petLimit>=6){
+                    if(isDragging){
+                        isDragging.toggle()
+                    }
+                    
+                    petLimit = 0
+                }
+                
+                petLimit+=1
+                
+                UINotificationFeedbackGenerator().notificationOccurred(.error)
+                let tempEmotion = lumiEmotion
+                lumiEmotion = "LumiPet"
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    lumiEmotion = tempEmotion
+                    
+                }
+            }
     }
 }
+
 
 
 //MARK: - PREVIEW

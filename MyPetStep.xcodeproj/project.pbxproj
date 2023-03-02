@@ -41,7 +41,6 @@
 		BFDFE27529AF9F8D001E6DF4 /* RegularResponseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDFE27429AF9F8D001E6DF4 /* RegularResponseButton.swift */; };
 		BFDFE27A29AFA1AE001E6DF4 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDFE27929AFA1AE001E6DF4 /* Pet.swift */; };
 		BFDFE27C29AFA1B3001E6DF4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDFE27B29AFA1B3001E6DF4 /* User.swift */; };
-		BFDFE27E29B082C7001E6DF4 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDFE27D29B082C7001E6DF4 /* Example.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,7 +79,6 @@
 		BFDFE27429AF9F8D001E6DF4 /* RegularResponseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularResponseButton.swift; sourceTree = "<group>"; };
 		BFDFE27929AFA1AE001E6DF4 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		BFDFE27B29AFA1B3001E6DF4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		BFDFE27D29B082C7001E6DF4 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,7 +197,6 @@
 		BF2C0EC529AF5A780018E4E2 /* MessageView */ = {
 			isa = PBXGroup;
 			children = (
-				BFDFE27D29B082C7001E6DF4 /* Example.swift */,
 				3016994229A0AC9A009155DD /* MessageView.swift */,
 				BFDFE27229AF9F2F001E6DF4 /* RewardView.swift */,
 				BFDFE27829AFA11E001E6DF4 /* ConversationView */,
@@ -364,7 +361,6 @@
 				30B2784A29A6F8C30016012F /* CalendarView.swift in Sources */,
 				BF2C0ECE29AF5DDD0018E4E2 /* SettingViewModel.swift in Sources */,
 				BFDFE26A29AF9B7D001E6DF4 /* ConversationView.swift in Sources */,
-				BFDFE27E29B082C7001E6DF4 /* Example.swift in Sources */,
 				30B2782B29A585B70016012F /* OnBoardingPetFollowView.swift in Sources */,
 				3055BF8929A1FC6E00939D77 /* ConversationDatabase.swift in Sources */,
 				30B2782F29A590740016012F /* PetFollowView.swift in Sources */,
