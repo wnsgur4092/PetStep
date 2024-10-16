@@ -12,8 +12,6 @@
 		3016993229A0AB27009155DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016993129A0AB27009155DD /* ContentView.swift */; };
 		3016993429A0AB28009155DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3016993329A0AB28009155DD /* Assets.xcassets */; };
 		3016993729A0AB28009155DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3016993629A0AB28009155DD /* Preview Assets.xcassets */; };
-		3016993929A0AB28009155DD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016993829A0AB28009155DD /* Persistence.swift */; };
-		3016993C29A0AB28009155DD /* MyPetStep.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3016993A29A0AB28009155DD /* MyPetStep.xcdatamodeld */; };
 		3016994329A0AC9A009155DD /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016994229A0AC9A009155DD /* MessageView.swift */; };
 		3016994529A0ACA9009155DD /* MyDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016994429A0ACA9009155DD /* MyDiaryView.swift */; };
 		3016994729A0ACB4009155DD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016994629A0ACB4009155DD /* SettingsView.swift */; };
@@ -42,8 +40,6 @@
 		3016993129A0AB27009155DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3016993329A0AB28009155DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3016993629A0AB28009155DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3016993829A0AB28009155DD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		3016993B29A0AB28009155DD /* MyPetStep.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyPetStep.xcdatamodel; sourceTree = "<group>"; };
 		3016994229A0AC9A009155DD /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		3016994429A0ACA9009155DD /* MyDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDiaryView.swift; sourceTree = "<group>"; };
 		3016994629A0ACB4009155DD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -106,8 +102,6 @@
 				3016993129A0AB27009155DD /* ContentView.swift */,
 				3016993329A0AB28009155DD /* Assets.xcassets */,
 				3016088729A7844500146245 /* NotificationView.swift */,
-				3016993829A0AB28009155DD /* Persistence.swift */,
-				3016993A29A0AB28009155DD /* MyPetStep.xcdatamodeld */,
 				3016993529A0AB28009155DD /* Preview Content */,
 			);
 			path = MyPetStep;
@@ -249,9 +243,7 @@
 				30B2784E29A6FAC80016012F /* DateExtension.swift in Sources */,
 				30B2782929A5849F0016012F /* OnBoardingPetMessageView.swift in Sources */,
 				3016088829A7844500146245 /* NotificationView.swift in Sources */,
-				3016993929A0AB28009155DD /* Persistence.swift in Sources */,
 				30B2784529A6F71D0016012F /* MoodDiary.swift in Sources */,
-				3016993C29A0AB28009155DD /* MyPetStep.xcdatamodeld in Sources */,
 				30B2784729A6F7A70016012F /* Storage.swift in Sources */,
 				3016994529A0ACA9009155DD /* MyDiaryView.swift in Sources */,
 				30B2784129A6F64D0016012F /* ChooseMoodView.swift in Sources */,
@@ -404,6 +396,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,6 +427,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,19 +463,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3016993A29A0AB28009155DD /* MyPetStep.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3016993B29A0AB28009155DD /* MyPetStep.xcdatamodel */,
-			);
-			currentVersion = 3016993B29A0AB28009155DD /* MyPetStep.xcdatamodel */;
-			path = MyPetStep.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3016992429A0AB27009155DD /* Project object */;
 }
